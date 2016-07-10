@@ -54,11 +54,11 @@
 					</div>
 					<nav class="col-md-6 col-md-offset-4">
 						<ul class="menu">
-							<li><a href="#" class="active">Home</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">About</a></li>
+							<li><a href="#home" class="active">Home</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#About">About</a></li>
 							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -66,25 +66,25 @@
 		</div>
 	</header>
 
-	<section class="slider">
+	<section id="About" class="slider">
 		<div class="container">
 			<div class="row">
 				<div class="center col-md-12">
-					<h1>We are <span>Webpaint</span></h1>
-					<p><span>digital</span> &amp; <span>branding</span> agency based in Jupiter and we would love to turn ideas into beautiful things.</p>
+					<h1 class="wow fadeInLeft" data-wow-duration="1s">We are <span>Webpaint</span></h1>
+					<p class="wow fadeInRight" data-wow-duration="1.5s"><span>digital</span> &amp; <span>branding</span> agency based in Jupiter and we would love to turn ideas into beautiful things.</p>
 					
-					<button class="btn">See portfolio</button>
+					<button class="button wow fadeInUp" data-wow-duration="1.5s">See portfolio</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="services">
+	<section  class="services">
 		<div class="container">
 			<div class="row">
 				<div class="service-items">
 
-					<div class="col-md-3 center">
+					<div class="col-md-3 center wow slideInLeft">
 						<div class="icon">
 							<img src="img/android.svg" alt="Android">
 						</div>
@@ -92,7 +92,7 @@
 						<p>Vestibulum id ligula porta  euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</p>
 					</div>
 
-					<div class="col-md-3 center">
+					<div class="col-md-3 center wow slideInDown">
 						<div class="icon">
 							<img src="img/computer.svg" alt="Computer">
 						</div>
@@ -100,7 +100,7 @@
 						<p>Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus.</p>
 					</div>
 
-					<div class="col-md-3 center">
+					<div class="col-md-3 center wow slideInUp">
 						<div class="icon">
 							<img src="img/camera.svg" alt="Camera">
 						</div>
@@ -108,7 +108,7 @@
 						<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus mollis.</p>
 					</div>
 
-					<div class="col-md-3 center">
+					<div class="col-md-3 center wow slideInRight">
 						<div class="icon">
 							<img src="img/watch.svg" alt="Watch">
 						</div>
@@ -121,36 +121,56 @@
 		</div>
 	</section>
 
-	<section class="portfolio">
+	<section id="portfolio" class="portfolio">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 center">
-					<h2>Our Featured Works</h2>
-					<p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.</p>
+					<h2 class="wow flipInY" data-wow-offset="100">Our Featured Works</h2>
+					<p class="wow flipInY" data-wow-offset="100">Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.</p>
 
-					<div class="portfolio-sort">
-						<button class="btn">All</button>
-						<button class="btn">Graphic</button>
-						<button class="btn">Illustration</button>
-						<button class="btn">Motion</button>
+					<div class="container">
+						<div class="row">
+							<div class="portfolio-sort button-group filters-button-group popup-gallery">
+								<button class="button is-checked active wow flipInX" data-filter="*" data-wow-offset="100">All</button>
+								<button class="button wow flipInX" data-filter=".graphic" data-wow-offset="100">Graphic</button>
+								<button class="button wow flipInX" data-filter=".illustration" data-wow-offset="100">Illustration</button>
+								<button class="button wow flipInX" data-filter=".motion" data-wow-offset="100">Motion</button>
+							</div>
+
+
+
+						</div>
+
+						<div class="grid popup-gallery">
+
+							<div class="col-md-3 element-item graphic wow rotateInDownLeft"><a href="img/layer-1.jpg"><img src="img/layer-1.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item illustration wow rotateInDownLeft"><a href="img/layer-2.jpg"><img src="img/layer-2.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item motion wow rotateInDownRight"><a href="img/layer-3.jpg"><img src="img/layer-3.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item motion wow rotateInDownRight"><a href="img/layer-4.jpg"><img src="img/layer-4.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item graphic wow rotateInDownLeft"><a href="img/layer-5.jpg"><img src="img/layer-5.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item graphic wow rotateInDownLeft"><a href="img/layer-6.jpg"><img src="img/layer-6.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item motion wow rotateInDownRight"><a href="img/layer-7.jpg"><img src="img/layer-7.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item graphic wow rotateInDownRight"><a href="img/layer-8.jpg"><img src="img/layer-8.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item illustration wow rotateInDownLeft"><a href="img/layer-9.jpg"><img src="img/layer-9.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item illustration wow rotateInDownLeft"><a href="img/layer-10.jpg"><img src="img/layer-12.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item motion wow rotateInDownRight"><a href="img/layer-11.jpg"><img src="img/layer-10.jpg" alt=""></a></div>
+							
+							<div class="col-md-3 element-item graphic wow rotateInDownRight"><a href="img/layer-12.jpg"><img src="img/layer-11.jpg" alt=""></a></div>
+
+						</div>
+
 					</div>
 				</div>
-
-				<div class="portfolio-list">
-					<div class="col-md-3"><img src="img/layer-1.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-2.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-3.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-4.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-5.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-6.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-7.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-8.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-9.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-12.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-10.jpg" alt=""></div>
-					<div class="col-md-3"><img src="img/layer-11.jpg" alt=""></div>
-				</div>
-
 			</div>
 		</div>
 	</section>
@@ -161,11 +181,11 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-12 center">
+					<div class="col-md-12 center wow fadeInUp" data-wow-offset="100"">
 
 						<h2>Get in Touch</h2>
 						<p>Vestibulum id ligula porta felis euismod semper,malesuada euismod.</p>
-						<a class="contacts adress">Moonshine Street No: 14/05 Light City, Jupiter</a>
+						<a id="contact" class="contacts adress">Moonshine Street No: 14/05 Light City, Jupiter</a>
 						<a class="contacts phone">0247 541 65 87</a>
 					</div>
 				</div>
@@ -174,7 +194,7 @@
 			<div class="social">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 soc-icons center">
+						<div class="col-md-12 soc-icons center wow zoomInUp">
 							<a href="#" class="rss">&nbsp;</a>
 							<a href="#" class="facebook">&nbsp;</a>
 							<a href="#" class="twitter">&nbsp;</a>
@@ -187,7 +207,7 @@
 
 		</section>
 
-		<section class="copyright center">
+		<section class="copyright center wow pulse">
 			<small>@ 2013 Webpaint. All Rights Reserved.</small>
 		</section>
 
